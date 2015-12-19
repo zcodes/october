@@ -92,7 +92,7 @@ class User extends UserBase
             return $this->avatar->getThumb($size, $size, $options);
         }
         else {
-            return '//www.gravatar.com/avatar/' .
+            return '//cn.gravatar.com/avatar/' .
                 md5(strtolower(trim($this->email))) .
                 '?s='. $size .
                 '&d='. urlencode($default);
